@@ -18,12 +18,12 @@ TC01 - Verify that can open browser success
 TC02 - Verify that can click icon profile 
     Click profile
 TC03 - Verify that can click button sign up to register successful
-    Register New User    acc0@gmail.com   Test1234@    Test1234@
+    Register New User    acc20@gmail.com   Test1234@    Test1234@
 TC04 - Verify that can logout after register successful
     Logout
 TC05 - Verify that can login after register successful
     Click Profile
-    Login    acc@gmail.com    Test1234@
+    Login    acc20@gmail.com    Test1234@
 TC06 - Page should equal Doppee after login successful
     Page Shoudl Be Equal Doppee On Top Left Bar
 TC07 - Verify that can search item phone successful
