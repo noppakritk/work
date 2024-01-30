@@ -4,7 +4,7 @@ Library          SeleniumLibrary
 
 *** Variables ***
 ${BROWSER}       chrome
-${URL}           https://training-platform.doppio-tech.com
+${URL}           https://training-platform.doppio-tech.com     #SIT ENV https://doppee.doppio-tech.com
 ${name}          Qa
 ${surname}       Tester
 ${address}       30/9 siam village bangkok
