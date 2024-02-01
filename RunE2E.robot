@@ -8,7 +8,7 @@ ${URL}           https://training-platform.doppio-tech.com     #SIT ENV https://
 ${name}          Qa
 ${surname}       Tester
 ${address}       30/9 siam village bangkok
-${telephone}     0953353363        
+${telephone}     0953353363       
 ${creditcard}    4111111111111111
 
 *** Test Cases ***
@@ -18,12 +18,12 @@ TC01 - Verify that can open browser success
 TC02 - Verify that can click icon profile 
     Click profile
 TC03 - Verify that can click button sign up to register successful
-    Register New User    acc20@gmail.com   Test1234@    Test1234@
+    Register New User    acc31@gmail.com   Test1234@    Test1234@
 TC04 - Verify that can logout after register successful
     Logout
 TC05 - Verify that can login after register successful
     Click Profile
-    Login    acc20@gmail.com    Test1234@
+    Login    acc31@gmail.com    Test1234@
 TC06 - Page should equal Doppee after login successful
     Page Shoudl Be Equal Doppee On Top Left Bar
 TC07 - Verify that can search item phone successful
@@ -34,6 +34,7 @@ TC08 - Verify that can purchase the item with credit card successful
     Input Surname
     Input Address
     Input Telephone
+    Input Email    acc31@gmaill.com
     Process Payment
     Input Credit Card
     Order Success Confirmed
@@ -85,6 +86,9 @@ Input Address
     Input Text    id:form_item_address    30/9 siam village bangkok
 Input Telephone 
     Input Text    id:form_item_phone    ${telephone}
+Input Email
+    [Arguments]    ${emailPayment}
+    Input Text    id:form_item_email    ${emailPayment}    
 Process Payment
     Click Element    //*[@id="app"]/section/div/div[3]/div/div/div/div/div/div/div/button
     Click Element    //*[@id="app"]/section/div/div/button
