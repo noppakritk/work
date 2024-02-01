@@ -87,7 +87,7 @@ Input Address
 Input Telephone 
     Input Text    id:form_item_phone    ${telephone}
 Input Email
-    [Arguments]    ${emailPayment}
+    [Arguments]   ${emailPayment}
     Input Text    id:form_item_email    ${emailPayment}    
 Process Payment
     Click Element    //*[@id="app"]/section/div/div[3]/div/div/div/div/div/div/div/button
